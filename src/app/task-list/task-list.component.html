@@ -1,0 +1,13 @@
+<div *ngFor="let task of tasks$ | async" style="min-width: 50%;
+margin: 40px;">
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>{{ task.title }}</mat-card-title>
+      <mat-card-subtitle>Assignee: {{ task.assignee }}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <p>{{ task.description }}</p>
+      <p>{{ task.status  }}</p>
+    </mat-card-content>
+  </mat-card>
+</div>
